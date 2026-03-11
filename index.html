@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie Scigliano | Ingeniería Biomédica e Investigación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --accent-color: #0ea5e9;
+            --background-color: #f8fafc;
+            --text-color: #0f172a;
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-main); color: var(--text-color); background-color: var(--background-color); line-height: 1.6; }
+        header { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--text-color); font-weight: 600; font-size: 0.9rem; }
+        section { padding: 80px 5%; max-width: 1000px; margin: auto; }
+        .hero { display: flex; align-items: center; gap: 40px; padding-top: 40px; }
+        .hero-text { flex: 1; }
+        .hero h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 20px; color: var(--primary-color); }
+        .profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .card { background: white; padding: 30px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .social-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+        .social-card { display: flex; align-items: center; gap: 16px; padding: 20px; border-radius: 12px; text-decoration: none; color: inherit; border: 1px solid rgba(0,0,0,0.08); transition: 0.2s; }
+        .social-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+        .social-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+        .social-card.social-X .social-icon { background: #000; }
+        .social-card.social-Instagram .social-icon { background: #E1306C; }
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; opacity: 0.7; }
+        @media (max-width: 768px) { .hero { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <strong>Annie Scigliano</strong>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Tecnología con propósito: construyendo puentes entre la ciencia y la comunidad.</h1>
+            <p>Soy Annie Scigliano, estudiante de Ingeniería Biomédica e investigadora. Transformo la innovación técnica en soluciones accesibles para los desafíos de nuestro entorno.</p>
+        </div>
+        <img src="https://raw.githubusercontent.com/anyprinter001-source/jb-anyscigliano/main/assets/profile.jpg" alt="Annie Scigliano" class="profile-img">
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="grid" style="margin-top: 30px;">
+            <div class="card">
+                <h3>Harmonic Beacon</h3>
+                <p>Exploración avanzada de tecnologías de señalización y protocolos de comunicación en entornos de redes comunitarias.</p>
+                <small><strong>Potenciando la infraestructura de conectividad local.</strong></small>
+            </div>
+            <div class="card">
+                <h3>LibrePollo</h3>
+                <p>Desarrollo de herramientas de hardware y software abierto bajo los principios de la tecnología apropiada.</p>
+                <small><strong>Haciendo la tecnología accesible y abierta para todos.</strong></small>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="card" style="margin-top: 20px;">
+            <h3>Hola, soy Annie</h3>
+            <p>Bienvenidos a mi espacio digital donde comparto mis reflexiones sobre neurociencias, hardware abierto y tecnología comunitaria.</p>
+            <a href="blog/post-001.html">Leer más →</a>
+        </div>
+        <p style="margin-top: 20px; opacity: 0.6;">Más entradas próximamente.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="social-grid" style="margin-top: 30px;">
+            <a href="https://twitter.com/anyscigliano" target="_blank" class="social-card social-X">
+                <div class="social-icon"><svg viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.632 5.905-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
+                <div class="social-info"><span class="social-name">X</span><span class="social-handle">@anyscigliano</span></div>
+            </a>
+            <a href="https://instagram.com/annscigliano_" target="_blank" class="social-card social-Instagram">
+                <div class="social-icon"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+                <div class="social-info"><span class="social-name">Instagram</span><span class="social-handle">@annscigliano_</span></div>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Annie Scigliano</p>
+    <p>Este sitio fue creado con <a href="https://anyprinter001-source.github.io">Il Postino Bot</a>.</p>
+    <p>Una casa digital viva, armada desde conversación.</p>
+    <p><a href="https://cafecito.app/ilpostino">☕ Invitame un café</a></p>
+</footer>
+
+</body>
+</html>
